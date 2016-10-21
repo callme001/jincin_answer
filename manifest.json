@@ -1,0 +1,42 @@
+{
+    "manifest_version": 2,
+    "name": "锦成网答题辅助插件",
+    "version": "1.0",
+    "description": "我是一只猫,喵喵喵~~~",
+    "icons": {
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "24": "images/icon24.png",
+            "48": "images/icon48.png"
+        },
+        "default_title": "喵喵喵~~~",
+        "default_popup": "popup.html"
+    },
+    "background": {
+      "scripts": ["js/jquery.min.js","js/background.js"],
+      "persistent": true
+    },
+    "content_scripts":[
+      {
+        "matches":["*://course.njcedu.com/newcourse/question/questionbefor.htm?courseId=*"],
+        "js":["js/jquery.min.js","js/getAnswer.js"]
+      },
+	  {
+		"matches":["*://course.njcedu.com/questionRecord.htm?courseId=*"],
+        "js":["js/jquery.min.js","js/getAnswer2.js"]
+	  }
+    ],
+    "permissions":[
+      "cookies",
+      "<all_urls>",
+      "webRequest",
+      "*://*/*",
+      "webRequestBlocking",
+      "*://*/*"
+    ]
+
+}
