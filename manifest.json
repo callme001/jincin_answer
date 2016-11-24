@@ -26,7 +26,7 @@
         "js":["js/jquery.min.js","js/getAnswer.js"]
       },
 	  {
-		"matches":["*://course.njcedu.com/questionRecord.htm?courseId=*"],
+		"matches":["*://course.njcedu.com/questionbefore.htm?courseId=*"],
         "js":["js/jquery.min.js","js/getAnswer2.js"]
 	  }
     ],
