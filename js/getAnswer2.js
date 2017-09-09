@@ -4,4 +4,5 @@ $(document).ready(function(){
 		var selected = "input[option=" + $(this).attr("stranswer")+"]";
 		$(this).find(selected).click();
 	});
+    $("#record  input[type=button]").first().click();
 });

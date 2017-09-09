@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
     "name": "锦成网答题辅助插件",
-    "version": "1.0",
-    "description": "我是一只猫,喵喵喵~~~",
+    "version": "1.1",
+    "description": "锦成网答题辅助插件",
     "icons": {
         "16": "images/icon16.png",
         "48": "images/icon48.png",
@@ -28,6 +28,10 @@
 	  {
 		"matches":["*://course.njcedu.com/questionbefore.htm?courseId=*"],
         "js":["js/jquery.min.js","js/getAnswer2.js"]
+	  },
+	  {
+		"matches":["*://course.njcedu.com/questionRecord.htm?courseId=*"],
+        "js":["js/jquery.min.js","js/getAnswer3.js"]
 	  }
     ],
     "permissions":[
